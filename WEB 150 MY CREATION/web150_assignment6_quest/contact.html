@@ -1,0 +1,147 @@
+<!doctype html>
+
+<!-- Madiha Sadaf
+WEB 150, ASN6
+Business name: TechQuest -->
+
+<!-- Had to change nav bar from the sketches as they were complex -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tech Quest is a website for all techies">
+    <title>WEB150: TechQuest Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="row">
+        <div>
+            <h1><span class="capital">T</span><span class="logo">ECH</span>
+                <span class="capital">Q</span><span class="logo2">UEST</span></h1>
+            <h2>Everything Smart!</h2>
+        </div>
+    </header>
+
+    <nav class="row">
+        <a href="index.html">Contact</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="current">Contact</a>
+        <a href="payment.html">Payment</a>
+    </nav>
+
+    <h1 class="title title-layout">Contact Us</h1>
+
+    <main class="row contact">
+        <form action="submit.php" method="post" name="contact_form" id="contact_form" class="subform">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" autofocus>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <div class="radio-format">
+                On a scale of 1 to 10, how would you rate your experience with our smartphones?
+                <label>
+                    <input type="radio" name="smartphone" value="low">
+                    Poor Quality (1-4)
+                </label>
+
+                <label>
+                    <input type="radio" name="smartphone" value="ok">
+                    Average Quality (5-7)
+                </label>
+
+                <label>
+                    <input type="radio" name="smartphone" value="good">
+                    Good Quality (8-10)
+                </label>
+            </div>
+
+            <div class="radio-format">
+                On a scale of 1 to 10, how would you rate your experience with our gaming products?
+                <label>
+                    <input type="radio" name="gaming" value="low">
+                    Poor Quality (1-4)
+                </label>
+
+                <label>
+                    <input type="radio" name="gaming" value="ok">
+                    Average Quality (5-7)
+                </label>
+
+                <label>
+                    <input type="radio" name="gaming" value="good">
+                    Good Quality (8-10)
+                </label>
+            </div>
+
+            <div class="radio-format">
+                On a scale of 1 to 10, how would you rate your experience with our accessories?
+                <label>
+                    <input type="radio" name="accessories" value="low">
+                    Poor Quality (1-4)
+                </label>
+
+                <label>
+                    <input type="radio" name="accessories" value="ok">
+                    Average Quality (5-7)
+                </label>
+
+                <label>
+                    <input type="radio" name="accessories" value="good">
+                    Good Quality (8-10)
+                </label>
+            </div>
+
+            <label>
+                <input type="checkbox" name="newsletter" value="yes" checked>
+                Sign up to receive notifications on early deals!
+            </label>
+
+            <label for="refer">How did you hear about us?</label>
+            <select name="refer" id="refer">
+                <option value="">- Select One -</option>
+                <option value="1">Friend</option>
+                <option value="2">Advertisement</option>
+                <option value="3">Family</option>
+                <option value="4">Social Media</option>
+            </select>
+
+            <label for="comments">Comment:</label>
+            <textarea name="comments" id="comments" placeholder="Comment your reviews"></textarea>
+            <input type="submit" value="Subscribe">
+        </form>
+
+        <section>
+            <h3>Store Location!</h3>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.220731781171!2d-88.0751788845525!3d42.08131997920652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fa5ea9833a843%3A0xeb56837f813674f!2sHarper%20College!5e0!3m2!1sen!2sus!4v1605660212859!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
+
+            <ul>
+                <li>1200 W Algonquin Rd</li>
+                <li>Palatine, IL 60067</li>
+            </ul>
+
+            <ul>
+                <li>Hours:</li>
+                <li>Mon-Fri: 8:00AM - 11:00PM</li>
+                <li>Sat: 10:00AM - 7:00PM</li>
+                <li>Sun: 10:00AM - 1:00PM</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        &copy;2020 TechQuest
+    </footer>
+
+</body>
+
+</html>

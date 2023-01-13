@@ -1,0 +1,506 @@
+/* Madiha Sadaf
+WEB 150, ASN6
+Business name: TechQuest */
+
+/* Had to change the nav bar from the sketches as they were complex */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 2600px;
+    margin: 0 auto;
+    font-family: 'Fondamento', helvetica, cursive;
+    font-size: calc(14px + (24 - 14) * (100vw - 300px) / (1600-300));
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main.home {
+    background-color: #1f7872;
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../images/markus-spiske-iar-afB0QQw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header div {
+    align-self: center;
+    min-width: 50%;
+    padding: 15px;
+    margin: 10px;
+    color: #1f7872;
+    font-weight: bold;
+    background-color: #dedba7;
+    border-radius: 4px 50px 4px 50px;
+    animation: color-change 6s infinite, party 4s;
+    z-index: 110;
+}
+
+@keyframes color-change {
+    0% {
+        background-color: rgba(189, 224, 106, 0.85);
+    }
+
+    25% {
+        background-color: rgba(144, 194, 110, 0.85);
+    }
+
+    75% {
+        background-color: rgba(153, 233, 99, 0.85);
+    }
+
+    100% {
+        background-color: rgba(163, 233, 120, 0.85);
+    }
+
+}
+
+@keyframes party {
+    0% {
+        left: 300px;
+        height: 999px;
+        width: 1500px;
+        font-size: 2em;
+        transform: scale(1,1);
+    }
+
+    25% {
+        left: -400px;
+        height: 75%;
+        width: 75%;
+    }
+
+    75% {
+        left: 200px;
+        height: 50%;
+        width: 50%;
+    }
+
+    100% {
+        left: 0px;
+        height: auto;
+        width: auto;
+    }
+
+}
+
+header div h1 .capital {
+    font-family: courgette, cursive;
+    font-size: 200%;
+    line-height: 1;
+    color: #39775c;
+}
+
+.logo {
+    display: inline-block;
+    margin-left: -.5em;
+    color: #4d4988;
+}
+
+.logo2 {
+    display: inline-block;
+    color: #4d4988;
+}
+
+nav {
+    background-color: #4d4988;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #FFF;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a.current {
+    background-color: #1a202c;
+}
+
+nav a:hover {
+    background-color: #e7e282;
+    color: #000;
+}
+
+nav a:active {
+    background-color: #ff9900;
+}
+
+.home {
+    padding: 15px;
+}
+
+.home div.row {
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.home div.row img {
+    flex-basis: 25%;
+    max-height: 200px;
+    padding: 10px;
+    object-fit: cover;
+    width: 100%;
+}
+
+div.row img:hover {
+    transform: matrix(1, -0.3, 0, 1, 0, 0); ;
+    transition: all 1s;
+  }
+
+/* Products */
+.title {
+    color: #061535;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.products table.inventory caption {
+    color: white;
+}
+
+main.products {
+    background-color: #1f7872;
+    padding: 20px;
+}
+
+.inventory {
+    background-color: rgb(231, 182, 107);
+    max-width: 90%;
+    margin: 0 auto 0 auto;
+    border-collapse: collapse;
+}
+
+.inventory caption {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inventory th,
+.inventory td {
+    border: 2px solid hsl(199, 73%, 50%);
+    padding: 6px 9px 6px 9px;
+}
+
+.inventory th {
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background: linear-gradient(to bottom, #15cff0, #a59e9e);
+}
+
+.inventory tr:nth-of-type(odd) {
+    background-color: rgba(231, 229, 97, 0.1);
+}
+
+.inventory tr:hover {
+    background-color: hsl(135, 40%, 76%);
+}
+
+.products {
+    margin: 0;
+    padding: 0;
+}
+
+.fa-star,
+.fa-star-half {
+    color: rgb(30, 116, 112);
+}
+
+.price,
+.rating {
+    width: 25%;
+}
+
+/* Contact */
+.title {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.title-layout {
+    background-color: #5ab4ae;
+    padding-top: 20px;
+}
+
+.contact {
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+main.contact {
+    background-color: #5ab4ae;
+}
+
+.contact form {
+    padding: 5%;
+    flex-basis: 50%;
+}
+
+label {
+    display: block;
+}
+
+label[for="refer"] {
+    margin-top: 5%;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    font-family: 'Fondamento', helvetica, cursive;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: thin solid #046b3e;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    color: rgb(44, 19, 3);
+    background-color: rgb(231, 211, 243);
+}
+
+div.radio-format {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+div.radio-format label {
+    padding: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-bottom: 40px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: rgb(214, 212, 57);
+    background-color: rgb(172, 14, 14);
+    border-radius: 5px;
+    border: 1px solid yellow;
+    width: 100%;
+}
+
+.payment input[type="submit"] {
+    width: 80%;
+    margin: 20px auto;
+    
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ffb938;
+}
+
+input[type="submit"]:active {
+    background-color: hsl(157, 81%, 65%);
+}
+
+.contact section {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact .map {
+    max-width: 100%;
+    border: none;
+}
+
+.contact section ul {
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.contact section li {
+    list-style-type: none;
+}
+
+/* Payment */
+.title {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* .title-layout {
+    background-color: #5ab4ae;
+    padding-top: 20px;
+} */
+
+/* main form h1.title2 {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+} */
+
+main.payment {
+    background-color: #5ab4ae;
+    justify-content: center;
+}
+
+form fieldset {
+    border: 3px solid rgb(83, 70, 70);
+    margin-bottom: 30px;
+}
+
+form legend {
+    background: linear-gradient(to bottom, #f0a315, #bddf61);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form input.submit {
+    padding-top: 10px;
+}
+
+.payment form {
+    /* border: 3px solid black; */
+    margin-left: 10px;
+    padding: 10px;
+}
+
+form .row {
+    justify-content: space-between;
+}
+
+form .row p:nth-of-type(2) {
+    padding-left: 20px;
+
+}
+
+details {
+    width: 100%;
+}
+
+summary {
+    min-width: 450px;
+    padding: .5em;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.row.center {
+    justify-content: center;
+}
+
+
+
+.row.center p {
+    text-align: center;
+}
+
+footer {
+    font-size: 1.1em;
+    padding: 5px;
+    text-align: center;
+    background-color: hsl(157, 81%, 65%);
+}
+
+.parallax {
+    background-image: url(../images/Screen-Shot-2020-10-13-at-13.46.52-PM.png);
+    min-height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        padding-bottom: 60px;
+    }
+
+    fieldset {
+        padding-bottom: 60px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    form .row p:nth-of-type(2) {
+        padding-left: 0;
+
+    }
+
+    nav.row {
+        flex-direction: row;
+    }
+
+    header {
+        min-height: 200px;
+    }
+
+    summary {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    nav.row {
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .home div.row {
+        flex-direction: column;
+    }
+
+    /* .home div.row img{
+        width: 100%;
+        max-height: 200px; */
+}

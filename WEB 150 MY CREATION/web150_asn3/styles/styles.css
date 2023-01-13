@@ -1,0 +1,28 @@
+/* Madiha Sadaf 
+WEB 150, ASN1
+Sep 29, 2020 */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: salmon;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main.row {
+    background-color: gray;
+}
+
+section img {
+    width: 100%;
+    display: block;
+}
